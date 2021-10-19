@@ -17,7 +17,7 @@
 	</head>
 
 		<!-- navbar -->
-		<section id="navbar">
+		<section id="navbar" class="sticky-top">
 				<nav class="navbar navbar-expand-lg navbar-light">
 				  <a class="navbar-brand" href="#">L O G O</a>
 				  
@@ -71,12 +71,11 @@
 
 		<!-- About Me-->
 		<section>
-			<div class= "pt-5 text-center">
+			<div class= "container-fluid pt-5 text-center">
 					<h3>About Me</h3>
 					<p>Insert Some Text Here</p>
 
-				<div class="d-flex align-items-center">
-					<div class="row">
+					<div class="row justify-content-center">
 
 						<div class="d-flex flex-column col-6 p-5">
 							<h3>Chika</h3>
@@ -90,10 +89,59 @@
 						</div>
 
 					</div>
-				</div>
 			</div>
 		</section>
 
+		<!--Contact Me and Map -->
+
+		<section>
+			<div class="container pt-5 text-center">
+					<h3>Contact Me</h3>
+					<p>Insert Some Text Here</p>
+
+					<div class="row p-2 text-center">
+
+						<div class="col-6 p-5">
+							<form class="p-2 text-light">
+									<div class="form-group pt-2">
+										<label for="InputName" class="d-block text-center"></label>
+										<input type="Name" class="form-control" id="InputName" placeholder="Your Name">
+									</div>
+
+									<div class="form-group">
+										<label for="EmailAddress" class="d-block text-center"></label>
+										<input type="email" class="form-control" id="EmailAddress" placeholder="name@example.com">
+									</div>
+
+									<div class="form-group">
+										<label for="ContactNumber" class="d-block text-center"></label>
+										<input type="tel" class="form-control" id="ContactNumber" placeholder="+63 900 000 000">
+									</div>
+
+									<div class="form-group">
+							    		<label for="exampleFormControlTextarea1" class="d-block text-center"></label>
+							    		<textarea class="form-control" id="exampleFormControlTextarea1" rows="8"></textarea>
+							  		</div>
+
+									<div class="d-block text-center pb-3">
+										<button type="button" class="btn btn-dark" data-toggle="modal" data-target="#myModal">Send Email</button>
+									</div>
+							</form>
+						</div>
+
+						<div class="col-6 text-ce">
+							<iframe src="https://www.google.com/maps/d/embed?mid=1YnPn3MXQjFobSpWi9k4HmRl5nps&hl=en" id="mapofparis"></iframe>
+						</div>
+
+					</div>
+		</section>
+
+		<!--footer> -->
+
+		<section>
+
+			
+		</section>
 	<body>
 
 
