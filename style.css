@@ -40,12 +40,52 @@ body{
 	outline:  none !important;
 }
 
+#jumbo{
+	background-color: #36A1D4;
+}
+
+#opening{
+	color: white;
+	margin-top: 300px;
+}
+
+#coffeeicon{
+	color: white;
+	height: 25px;
+	text-align: center;
+}
+
+#header-button{
+
+	text-decoration: none;
+	color: white;
+	text-align: center;
+	padding: 7px;
+	border-radius: 2px;
+	background-color: #77BFE2;
+}
+
+#about-me{
+	margin-top: 25px;
+}
 #mapofparis
 {
 	width: 600px;
 	height:480px;
 }
 
+#my-social-media
+{
+	background-color: #f8f9fa;
+	padding:  100px 0;
+}
+
+#my-social-media p
+{
+	font-size: 16px;
+	font-weight: 600;
+	margin-bottom: 30px;
+}
 .icons i{
 
 	width: 60px;
