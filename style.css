@@ -1,7 +1,6 @@
 *{ 
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
 }
 
 body{
@@ -37,7 +36,7 @@ body{
 
 .navbar-toggler
 {
-	outline:  none !important;
+	outline: none !important;
 }
 
 #jumbo{
@@ -51,9 +50,23 @@ body{
 
 #coffeeicon{
 	color: white;
-	height: 25px;
 	text-align: center;
 }
+
+#coffeeicon1{
+	color: #964B00;
+	text-align: center;
+	padding-top: 120px;
+	padding-bottom: 40px;
+}
+
+#coffeeicon2{
+	color: white;
+	text-align: center;
+	padding-top: 140px;
+	padding-bottom: 30px;
+}
+
 
 #header-button{
 
@@ -66,17 +79,28 @@ body{
 }
 
 #about-me{
-	margin-top: 25px;
+
 }
+
+#my-projects
+{
+	background-color: #77BFE2;
+	padding-bottom: 50px;
+	color: white;
+} 
 #mapofparis
 {
+	margin-top: 60px;
 	width: 600px;
 	height:480px;
 }
+#my-form{
+	background-color: #f8f9fa;
 
+}
 #my-social-media
 {
-	background-color: #f8f9fa;
+	background-color: #36A1D4;
 	padding:  100px 0;
 }
 
@@ -86,8 +110,10 @@ body{
 	font-weight: 600;
 	margin-bottom: 30px;
 }
+
 .icons i{
 
+	color: white;
 	width: 60px;
 	height: 60px;
 	transition:  0.5s;
@@ -97,4 +123,10 @@ body{
 .icons a:hover i{
 
 	transform:  translateY(-10px);
+}
+
+#socmedlinks{
+
+	color: white;
+	font-size: 16px;
 }
