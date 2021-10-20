@@ -16,8 +16,8 @@ body{
 }
 
 .navbar-nav li{
-	padding-top: 0;
-	padding-bottom: 50px;
+	padding-top: 0px;
+	padding-bottom: 0px;
 	padding-right: 10px;
 	padding-left: 10px;
 }
@@ -44,4 +44,17 @@ body{
 {
 	width: 600px;
 	height:480px;
+}
+
+.icons i{
+
+	width: 60px;
+	height: 60px;
+	transition:  0.5s;
+
+}
+
+.icons a:hover i{
+
+	transform:  translateY(-10px);
 }
