@@ -96,6 +96,7 @@ body{
 	height:100%;
 	text-align: center;
 	align-items: center;
+	padding: 14px;
 }
 
 #header-button{
@@ -198,5 +199,5 @@ body{
 .emailbtn
 {
 	display: block;
-	padding-top: 20px;
+	margin-top: 5px;
 }
