@@ -25,6 +25,28 @@ body{
 	
 .navbar-brand{
 	color: #fff !important;
+	position: relative;
+}
+
+.navbar-brand:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.navbar-brand:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+.navbar-brand{
+
 }
 .navbar-nav li a{
 	color:  #fff !important; /*overrides other attributes?*/
@@ -44,6 +66,36 @@ body{
 	outline: none !important;
 }
 
+
+#navbarNav ul li a {
+  position:relative;
+  z-index: 1;
+}
+#navbarNav ul li a:hover {
+  color: #91640F;
+}
+#navbarNav ul li a:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 1px;
+  content: '.';
+  color: transparent;
+  background: #77BFE2;
+  visibility: none;
+  opacity: 0;
+  z-index: -1;
+}
+#navbarNav ul li a:hover:after {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+}
 #jumbo{
 	background-color: #36A1D4;
 }
@@ -85,6 +137,7 @@ body{
 
 .about-the-server{
 	margin-top: 10px;
+	text-align: center;
 }
 .details{
 	margin-top: 0px;
@@ -97,15 +150,60 @@ body{
 	text-align: center;
 	align-items: center;
 	padding: 14px;
+	opacity: 0.5;
 }
 
-#header-button{
+.grad-photo:hover
+{
+    opacity: 1;
+}
+/*#header-button{
 
 	text-decoration: none;
 	color: white;
 	text-align: center;
 	border-radius: 2px;
 	background-color: #77BFE2;
+}
+*/
+
+#header-button {
+  border-radius: 4px;
+  background-color: #77BFE2;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 16px;
+  padding: 10px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+#header-button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#header-button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#header-button:hover span {
+  padding-right: 25px;
+}
+
+#header-button:hover span:after {
+  opacity: 1;
+  right: 0;
 }
 
 #about-me{
@@ -201,3 +299,26 @@ body{
 	display: block;
 	margin-top: 5px;
 }
+
+/*
+.hoverdesign{
+	position: relative;
+}
+.hoverdesign:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.hoverdesign:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+*/
